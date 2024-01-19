@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.math.BigInteger;
 
 public class Main{
     public static void main(String args[]){
@@ -7,11 +8,11 @@ public class Main{
         int T = sc.nextInt();
         
         String[] abc = sc.next().split("");
+        //BigInteger는 string으로 처리.,.,. 
+
+        long M = 1234567891;
         
-        int L = 26;
-        int M = 1234567891;
-        
-        int answer = 0;
+        BigInteger answer =  new BigInteger("0");
         
         for (int i = 0; i<T;i++){
             
@@ -22,14 +23,18 @@ public class Main{
             int num = (int)c -96;
             
             //a * 31^i 를 더하면 되는듯?
-            
-            answer+=(num*(Math.pow(31,i)));
-                    
-
-            
+            // for(int j = 0; j<=i;j++){
+                BigInteger k = new BigInteger(num+"");
+                
+                k = k.multiply(new BigInteger("31").pow(i));
+                BigInteger remain = k.remainder( new BigInteger(M+""));
+                answer = answer.add(remain);
+                // System.out.println(remain);
+            // }
+   
         }
         
-        System.out.println(answer);
+        System.out.println(answer.remainder(new BigInteger(M+"")));
         
     }
 }
