@@ -8,3 +8,4 @@ ar.sort()
 
 for a in ar:
     print(a)
+    # 실버4에 있는 이유가 뭘까 이거
