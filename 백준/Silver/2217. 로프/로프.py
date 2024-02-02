@@ -13,5 +13,6 @@ for i in range(1, n):
         continue
         # 그리디
         # 튼튼한 것부터 집어서 계산...???
+        # 왜지...
 
 print(max_k)
