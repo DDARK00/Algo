@@ -22,5 +22,7 @@ for t in range(1, T + 1):
                 temp.append(memo[j - 2] + memo[j - 1])
             temp.append(1)
             memo = temp
-            print(" ".join(list(map(str, temp))))
+            # print(" ".join(list(map(str, temp))))
+            print(*temp)
+            # 나머지 문자열이 있었지!
         # 스트링 변환
