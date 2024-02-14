@@ -1,7 +1,7 @@
-# T = int(input())
+# from collections import deque
 
 
-# 공략 안 보고 일단 두뇌 풀가동 #1 #2 #3
+# 공략 안 보고 일단 두뇌 풀가동 #1 #2 #3 #4 #5
 # 힌트 : 완전탐색 + 백트래킹
 import sys
 input = sys.stdin.readline
@@ -17,7 +17,6 @@ def dfs(qc, start):
     if qc == 0:
         # 여기까지 들어왔으면 -> 가능한 경우
         cnt += 1
-        # print(jar)
 
     else:
 
@@ -30,8 +29,6 @@ def dfs(qc, start):
                     caru.append(start + k)
                     card.append(start - k)
                     # 대각선
-                    # 4,3 ->  3,2  3,4 5,2 5,4
-                    # 합 7 차 1 1   7 7   1
 
                     # k가 0부터 n-1까지, 0,k 의 위치
                     dfs(qc - 1, start + 1)
@@ -53,11 +50,19 @@ n = int(input())
 # n*n
 
 cnt = 0
+# jar = deque([])
 jar = []
 # j축 검증 배열
+
+# caru = deque([])
 caru = []
+# card = deque([])
 card = []
 # 대각선 검증 배열
 dfs(n, 0)
 
 print(cnt)
+# deque로 바꿔봤는데 이게 더 빠르지 않을까?
+# not in 연산과정이 n인가 n=15 15!
+# 일반 list가 더 빠름...;;;
+# 이걸어떻게파이썬에서통과하지...
