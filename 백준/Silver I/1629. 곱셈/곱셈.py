@@ -1,5 +1,4 @@
 import sys
-import math
 
 input = sys.stdin.readline
 
@@ -26,7 +25,7 @@ def poweroverwhileming(n, s):
 # 분할 정복을 이용한 거듭제곱
 # 10^11 = 10^2*10^2*10^2*10^2*10^2*10
 
-print(poweroverwhileming(a, b))
+# print(poweroverwhileming(a, b))
 
 # 모듈러 연산을 어느 시점에서 해 줘야 하는걸까 모르겠다
-# print(math.pow(a, b, c))
+print(pow(a, b, c))
