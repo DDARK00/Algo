@@ -20,19 +20,19 @@ for _ in range(m):
 q = deque([])
 # bfs
 
-visited = {}
-
+# visited = {}
+visited = [0]*(n+1)
 cnt = 0
 
 for val in g.keys():
-    if not visited.get(val):
+    if not visited[val]:
         q.append(val)
 
         cnt += 1
 
         while q:
             v = q.popleft()
-            if not visited.get(v):
+            if not visited[v]:
                 visited[v] = 1
                 if g.get(v):
                     q.extend(g[v])
