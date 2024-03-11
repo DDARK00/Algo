@@ -1,3 +1,6 @@
+import sys
+input = sys.stdin.readline
+
 n = int(input())
 # n일 동안의 일정
 
@@ -23,14 +26,15 @@ for idx, val in enumerate(sch):
 # print(lst)
 
 # for i in range()
+maximum = -1
 
 for i in range(1, n + 1):
     if not lst[i]:
         dp[i] = dp[i - 1]
     else:
-        maximum = -1
-        for a, b in lst[i]:  
-            maximum = max(maximum, dp[a - 1] + b,dp[i-1])  # 해당 작업을 완료한 돈+ 작업 시작 전날까지의 돈, or 오늘 놀고 어제까지의 돈
+        # print(lst[i])
+        for a, b in lst[i]:
+            maximum = max(maximum, dp[a - 1] + b, dp[i-1])  # 해당 작업을 완료한 돈+ 작업 시작 전날까지의 돈, or 오늘 놀고 어제까지의 돈
         dp[i] = maximum
 print(dp[-1])
 # print(dp)
