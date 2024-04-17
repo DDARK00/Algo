@@ -16,7 +16,6 @@ for _ in range(m):
     g[a].append((c, b))  # w, v
     g[b].append((c, a))  # w, v
 
-# print(g)
 # dijk
 cost = [[inf, 0] for _ in range(1 + n)]
 cost[1][0] = 0
@@ -31,12 +30,10 @@ while pq:
             cost[nv][0] = nw + w
             cost[nv][1] = v
             heappush(pq, (nw + w, nv))
+print(n-1)
 
-way = set()
+way = []
 for i in range(2, n + 1):
-    start = cost[i][1]
-    end = i
-    way.add((end, start))
-print(len(way))
-for s, e in list(way):
-    print(s, e)
+    print(i,cost[i][1])
+
+# 중복 간선은 없는건가???
