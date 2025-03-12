@@ -1,0 +1,1 @@
+print(input()in"13"and input()in"68"and input()in"25"and"JAH"or"EI")
