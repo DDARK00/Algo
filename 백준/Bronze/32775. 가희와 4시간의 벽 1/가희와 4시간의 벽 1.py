@@ -1,0 +1,1 @@
+print(int(input())>int(input())and'flight'or'high speed rail')
