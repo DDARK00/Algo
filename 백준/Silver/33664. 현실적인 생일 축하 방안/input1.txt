@@ -1,0 +1,8 @@
+50 5 2
+Cake 35
+Clothes 30
+Toy 13
+Cartoon 3
+Goods 21
+Cake
+Toy
