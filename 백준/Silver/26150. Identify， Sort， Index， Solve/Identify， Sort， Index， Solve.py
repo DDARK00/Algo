@@ -1,0 +1,1 @@
+for s,_,i in sorted([input().split()for _ in range(int(input()))],key=lambda x:int(x[1])):print(s[int(i)-1].upper(),end="")
