@@ -1,12 +1,11 @@
-<html>
-<head><title>504 Gateway Time-out</title></head>
-<body>
-<center><h1>504 Gateway Time-out</h1></center>
-</body>
-</html>
-<!-- a padding to disable MSIE and Chrome friendly error page -->
-<!-- a padding to disable MSIE and Chrome friendly error page -->
-<!-- a padding to disable MSIE and Chrome friendly error page -->
-<!-- a padding to disable MSIE and Chrome friendly error page -->
-<!-- a padding to disable MSIE and Chrome friendly error page -->
-<!-- a padding to disable MSIE and Chrome friendly error page -->
+import sys
+input=sys.stdin.readline
+input()
+
+mn=10e9
+ans=0
+
+for i in map(int,input().split()):
+    mn=min(mn,i)
+    ans=max(ans,i-mn)
+    print(ans,end=" ")
