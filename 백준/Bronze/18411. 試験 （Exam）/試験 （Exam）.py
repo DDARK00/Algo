@@ -1,0 +1,1 @@
+print(sum(a:=list(map(int,input().split())))-min(a))
