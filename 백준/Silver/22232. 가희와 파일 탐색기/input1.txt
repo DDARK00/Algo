@@ -1,0 +1,9 @@
+5 3
+abc.jpeg
+abc.jpg
+foo.yolo
+bar.cpp
+bar.maltise
+jpg
+cpp
+maltise
