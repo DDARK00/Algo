@@ -1,0 +1,23 @@
+8
+ad_hoc 2
+case_work_ad_hoc 4
+hash_map 6
+sorting 6
+segtree 15
+stable_marriage 20
+kinetic_segtree 28
+anata 17
+4
+bronze 4
+silver 7
+platinum 16
+ruby 26
+8
+ruby - chan!
+nani ga suki?
+platinum - chan!
+nani ga suki?
+silver - chan!
+nani ga suki?
+bronze - chan!
+nani ga suki?

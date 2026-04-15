@@ -1,0 +1,8 @@
+hai!
+stable_marriage yori mo kinetic_segtree
+hai!
+segtree yori mo anata
+hai!
+sorting yori mo hash_map
+hai!
+ad_hoc yori mo case_work_ad_hoc
