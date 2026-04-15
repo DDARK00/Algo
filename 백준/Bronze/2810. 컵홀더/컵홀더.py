@@ -1,0 +1,5 @@
+n=int(input())
+s=input()
+s=s.replace("LL","L")
+s=list(s)
+print(len(s)+1 if len(s)!=n else len(s))
