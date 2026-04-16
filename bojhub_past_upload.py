@@ -8,7 +8,7 @@ import time
 USER_ID = "nitori"
 DRIVER_PATH = "C:/Users/ION/Downloads/chromedriver-win64/chromedriver.exe"
 WAIT_TIME = 10   # 각 묶음을 열고 기다릴 시간 (초)
-BATCH_SIZE = 1  # 동시에 열 탭 개수
+BATCH_SIZE = 10  # 동시에 열 탭 개수
  
 # 드라이버 주소 (path를 버전에 맞게 설정)
 # https://storage.googleapis.com/chrome-for-testing-public/141.0.7390.54/win64/chromedriver-win64.zip
